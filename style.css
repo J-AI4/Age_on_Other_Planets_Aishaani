@@ -1,5 +1,7 @@
 css
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family-Open+Sans&display=swap');
+
 :root {
     --space-bg: #0d0d2b;
     --nebula-purple: #8a2be2;
@@ -25,5 +27,32 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;    
+}
+
+.container {
+    background-color: var(--glass-bg);
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    max-width: 400px;
+    width: 90%;
+    animation: fadeIn 1.2s ease;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: var(--glow-blue);
+    text-shadow: 0 0 5px var(--glow-blue);
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: var(--white);
 }
 
