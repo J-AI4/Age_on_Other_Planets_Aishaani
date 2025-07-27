@@ -7,7 +7,7 @@
     --white: #ffffff;
     --glass-bg: rgba(255, 255, 255, 0.06);
     --input-bg: rgba(255, 255, 255, 0.1);
-    --button-glow: 0 0 10px #9c647e, 0 0 20px #6f00ff;
+    --button-glow: 0 0 10px #9c647e, 0 0 20px #b300ff;
 }
 
 * {
@@ -32,7 +32,7 @@ body {
     padding: 40px 30px;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 0 125px rgba(119, 0, 159, 0.433);
+    box-shadow: 0 0 125px rgba(106, 0, 255, 0.558);
     backdrop-filter: blur(12px);
     max-width: 360px;
     width: 90%;
