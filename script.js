@@ -1,10 +1,10 @@
 document.getElementById("calculateBtn").addEventListener("click", function () {
-    const earthAge = parseFloat(document.getElementById("earthAge").value);
+    const earthAge = parseFloat(document.getElementById("earthage").value);
     const resultDiv = document.getElementById("result");
 
-    if (isNaN(earthAge)) || earthAge <= 0) {
-        resultDiv.innerHTML = `<p>Please enter a valid age (more than 0).</p>`
-        return
+    if (isNaN(earthAge) || earthAge <= 0) {
+        resultDiv.innerHTML = `<p>Please enter a valid age (more than 0).</p>`;
+        return;
     }
 
     const earthDays = earthAge * 365; 
@@ -18,15 +18,15 @@ document.getElementById("calculateBtn").addEventListener("click", function () {
         Saturn: 10759,
         Uranus: 30687,
         Neptune: 60190,
-    }
+    };
 
-    let resultHTML = `<h2>Your Age on Other Planets:</h2><ul class="planet-list">`
+    let resultHTML = `<h2>Your Age on Other Planets:</h2><ul class="planet-list">`;
 
     for (let planet in planetYears) {
         const ageOnPlanet = earthDays / planetYears[planet];
-        resultHTML = `<li><strong>${planet}</strong>: ${ageOnPlanet.toFixed(1)} years</li>`;
-    }
+        resultHTML = `<li><strong>${planet}</strong>: ${ageOnPlanet.toFixed(2)} years</li>`;
+    };
 
     resultHTML = `</ul>`;
     resultDiv.innerHTML = resultHTML;
-};
+});
