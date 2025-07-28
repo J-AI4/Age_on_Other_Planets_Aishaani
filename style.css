@@ -15,11 +15,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+ 
 body {
-    background: radial-gradient(circle at 30% 30%, #080722, #111169);
+    background: radial-gradient(circle at 30% 30%, rgb(8, 7, 34), #111169);
     color: var(--white);
-    font-family: 'Open Sans', sans-serif;
+    font-family:'Open Sans', sans-serif;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -30,6 +30,7 @@ body {
 .container {
     background-color: var(--glass-bg);
     padding: 40px 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 0 125px rgba(106, 0, 255, 0.558);
@@ -55,6 +56,7 @@ label {
 
 input[type="number"] {
     padding: 10px;
+    font-family: fantasy;
     font-size: 1rem;
     width: 85%;
     background-color: var(--input-bg);
@@ -74,6 +76,7 @@ input[type="number"]:focus {
 button {
     padding: 12px 25px;
     font-size: 1rem;
+    font-family: monospace;
     background-color: var(--nebula-purple);
     color: #fff;
     border: none;
