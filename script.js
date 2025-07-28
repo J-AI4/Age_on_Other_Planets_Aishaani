@@ -20,4 +20,13 @@ document.getElementById("calculateBtn").addEventListener("click", function () {
         Neptune: 60190,
     }
 
-    let resultHTML = <h2>Your Age on Other Planets:</h2><ul class="planet-list">`
+    let resultHTML = `<h2>Your Age on Other Planets:</h2><ul class="planet-list">`
+
+    for (let planet in planetYears) {
+        const ageOnPlanet = earthDays / planetYears[planet];
+        resultHTML = `<li><strong>${planet}</strong>: ${ageOnPlanet.toFixed(1)} years</li>`;
+    }
+
+    resultHTML = `</ul>`;
+    resultDiv.innerHTML = resultHTML;
+};
