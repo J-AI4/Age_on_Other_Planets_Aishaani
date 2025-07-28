@@ -22,3 +22,6 @@ The biggest challenge was balancing aesthetic design with functionality. I had t
 
 Notes: 
 This project was built by me using just HTML, CSS, and JavaScript. I'm open to feeback, improvements, ideas and suggestions!
+
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
+
