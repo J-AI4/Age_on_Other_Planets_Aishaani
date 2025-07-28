@@ -1,5 +1,5 @@
-document.getElementById("calculateBtn").addEventListener("click", function () {
-    const earthAge = parseFloat(document.getElementById("earthage").value);
+document.getElementById("calculate-btn").addEventListener("click", function () {
+    const earthAge = parseFloat(document.getElementById("earth-age").value);
     const resultDiv = document.getElementById("result");
 
     if (isNaN(earthAge) || earthAge <= 0) {
@@ -24,9 +24,9 @@ document.getElementById("calculateBtn").addEventListener("click", function () {
 
     for (let planet in planetYears) {
         const ageOnPlanet = earthDays / planetYears[planet];
-        resultHTML = `<li><strong>${planet}</strong>: ${ageOnPlanet.toFixed(2)} years</li>`;
+        resultHTML += `<li><strong>${planet}</strong>: ${ageOnPlanet.toFixed(2)} years</li>`;
     };
 
-    resultHTML = `</ul>`;
+    resultHTML += `</ul>`;
     resultDiv.innerHTML = resultHTML;
 });
